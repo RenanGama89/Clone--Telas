@@ -33,9 +33,27 @@ export default function TabLayout() {
           title: 'Loja',
     tabBarIcon: ({ color, size }) => (
       <Ionicons name="storefront-outline" size={size} color={color} />
-    ),
+    ),}}
+    />
+    <Tabs.Screen
+    name="perfil"
+    options={{
+      title: 'Perfil',
+tabBarIcon: ({ color, size }) => (
+  <Ionicons name="person-circle-outline" size={size} color={color} />
+),
+        }}
+      />
+      <Tabs.Screen
+    name="pagamento"
+    options={{
+      title: 'Pagamento',
+tabBarIcon: ({ color, size }) => (
+  <Ionicons name="wallet-outline" size={size} color={color} />
+),
         }}
       />
     </Tabs>
+    
   );
 }
